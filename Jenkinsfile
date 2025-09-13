@@ -25,7 +25,7 @@ pipeline{
 	stage("Release") {
             steps {
                 sh '''
-                   oc project kbarreir-greetings
+                   oc project gfdees-greetings
                    oc start-build greeting-console --follow --wait
                 '''
             }
